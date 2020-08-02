@@ -1,0 +1,70 @@
+body    {
+    background-color: black;
+
+    /*removes scrollbar while allowing scroll*/
+
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: dodgerblue;
+}
+.flexCenter>div {
+    background-color: #f1f1f1;
+    columns: white;
+    text-align: center;
+    padding: 50px;
+}
+
+
+.flexWrap   {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 215, 0);
+}
+.flexWrap>p   {
+    background-color: #f1f1f1;
+    text-align: center;
+    width: 48%;
+    margin: 1%;
+    border-radius: 10px;
+}
+.flexWrap>h1    {
+    text-align: center;
+    margin: auto 1%;
+    width: 48%;
+
+}
+
+.flexGrow   {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: dodgerblue;
+}
+.flexGrow>a {
+    background-color: black;
+    color: #f1f1f1;
+    text-align: center;
+    text-decoration: none;
+    width: 45%;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    line-height: 2em;
+    font-size: .8em;
+}
+.flexGrow>a:hover {
+    background-color: rgb(255, 215, 0);
+}
+.flexGrow>a:active    {
+    background-color: rgb(255, 215, 0);
+}
